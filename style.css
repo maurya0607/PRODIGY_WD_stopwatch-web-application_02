@@ -1,0 +1,143 @@
+/* =========================
+   Global Reset & Base Styles
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   Page Layout
+   ========================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* =========================
+   Main Card
+   ========================= */
+.container {
+  width: 320px;
+  background: #020617;
+  padding: 36px 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   Header
+   ========================= */
+.task {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   Circular Timer
+   ========================= */
+.circle {
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #22c55e 0deg,
+    #22c55e 180deg,
+    #1e293b 180deg,
+    #1e293b 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  width: 165px;
+  height: 165px;
+  background: #020617;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Colors */
+.start {
+  background: #22c55e;
+  color: #020617;
+}
+
+.pause {
+  background: #facc15;
+  color: #020617;
+}
+
+.reset {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+/* Hover Effects */
+.buttons button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================
+   Responsive (Mobile)
+   ========================= */
+@media (max-width: 380px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .time {
+    width: 145px;
+    height: 145px;
+    font-size: 24px;
+  }
+}
